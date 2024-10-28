@@ -1,0 +1,49 @@
+Arguments: 
+  D:\soft\nodejs\node.exe D:\soft\nodejs\node_global\node_modules\yarn\bin\yarn.js add electron-squirrel-startup
+
+PATH: 
+  D:\项目\爬虫\reptile-app\node_modules\.bin;D:\项目\爬虫\reptile-app\node_modules\.bin;D:\项目\爬虫\node_modules\.bin;D:\项目\node_modules\.bin;D:\node_modules\.bin;D:\soft\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Users\admin\bin;D:\soft\Git\mingw64\bin;D:\soft\Git\usr\local\bin;D:\soft\Git\usr\bin;D:\soft\Git\usr\bin;D:\soft\Git\mingw64\bin;D:\soft\Git\usr\bin;C:\Users\admin\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\soft\Git\cmd;D:\soft\node\node_global;D:\soft\mongoDB\bin;D:\soft\nodejs;C:\Users\admin\AppData\Local\pnpm;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;D:\soft\Microsoft VS Code\bin;D:\soft\nodejs\node_global;C:\Users\admin\AppData\Roaming\npm;D:\soft\Git\usr\bin\vendor_perl;D:\soft\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\admin\AppData\Local\Yarn\Cache\v6\npm-universalify-0.1.2-b646f69be3942dabcecc9d6639c80dc105efaa66-integrity\node_modules\universalify\index.js' -> 'D:\项目\爬虫\reptile-app\node_modules\@electron\get\node_modules\universalify\index.js'
+
+npm manifest: 
+  {
+    "name": "reptile-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app/main/index.js",
+    "scripts": {
+      "start": "electron-forge start",
+      "package": "electron-forge package",
+      "make": "electron-forge make"
+    },
+    "type": "module",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@electron-forge/cli": "^7.5.0",
+      "electron": "^33.0.1"
+    },
+    "dependencies": {
+      "axios": "^1.7.7",
+      "express": "^4.21.1",
+      "lowdb": "^7.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

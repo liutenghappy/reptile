@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	background-color: #ebebeb;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+
+.container {
+	flex: 1;
+	background-color: #fff;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+
+
+input,
+select,
+button {
+	font-size: 12px;
+	padding: 2px;
+	outline: none;
+}
+
+button {
+	border: 1px solid #adadad;
+	cursor: pointer;
+	height: 34px;
+	background-color: #e1e1e1;
+	color: #000;
+}
+
+button.disable {
+	border: 1px solid #bfbfbf;
+	background-color: #cccccc;
+	color: #838383;
+	cursor: not-allowed;
+}

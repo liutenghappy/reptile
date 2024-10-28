@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>控制台</title>
+		<script src="../../utils/xlsx.js"></script>
+		<script src="../../utils/axios.js"></script>
+		<script src="../../utils/event.js"></script>
+		<link rel="stylesheet" href="../../styles/index.css" />
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="control">
+				<div id="tabToken">切换令牌</div>
+				<section class="control">
+					<div>
+						<span>分类：</span>
+						<select name="" id="type"></select>
+						<select name="" id="category"></select>
+					</div>
+
+					<div class="sort">
+						<span>价格：</span>
+						<label for="asc">
+							<span>升序</span><input checked id="asc" type="radio" name="sort"
+								value="market_price-asc" /></label>
+
+						<label for="desc"><span>降序</span>
+							<input id="desc" type="radio" name="sort" value="market_price-desc" /></label>
+					</div>
+					
+					<div class="price-range">
+						<span>价格区间：</span>
+						<input id="min-price" type="number" placeholder="最低价"/>
+						-
+						<input id="max-price" type="number" placeholder="最高价"/>
+					</div>
+
+					<div class="stock">
+						<span>有货：</span>
+						<label for="has_stock">
+							<span>是</span><input checked id="has_stock" type="checkbox" name="stock"
+								value="1" /></label>
+					</div>
+
+					<div>
+						<span>页数：</span>
+						第<input min="1" max="200" type="number" id="page" value="1" />
+						页
+					</div>
+				</section>
+
+				<section>
+					<p>日志</p>
+					<div id="log"></div>
+				</section>
+
+				<section class="btn-group">
+					<div class="group-1">
+						<button id="start">开始爬取数据</button>
+						<button id="continue">继续</button>
+						<button id="stop">暂停</button>
+						<button id="gen">导出Excel</button>
+					</div>
+					<div class="group-2">
+						<button id="reset">重置</button>
+					</div>
+				</section>
+			</div>
+
+		</div>
+	</body>
+	<script src="../../utils/reptile.js"></script>
+	<script src="../../utils/request.js"></script>
+	<script src="../../utils/getDate.js"></script>
+	<script src="./index.js"></script>
+
+</html>

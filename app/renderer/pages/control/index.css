@@ -1,0 +1,89 @@
+#control {
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+select {
+	width: 90px;
+	padding: 5px 0;
+}
+
+.control {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+#tabToken{
+	position: absolute;
+	top:15px;
+	right:20px;
+	color:blue;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.stock,
+.sort,
+label {
+	display: flex;
+	align-items: center;
+}
+
+section>div {
+	margin-bottom: 10px;
+}
+
+.sort span,
+.stock span {
+	margin-right: 5px;
+}
+
+.price-range>input{
+	width: 70px;
+	padding: 5px 0;
+	text-indent: 7px;
+}
+
+label {
+	margin-right: 10px;
+}
+
+.btn-group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.btn-group>div{
+	margin-bottom: 0;
+}
+
+button {
+	width: 90px;
+}
+
+button#start {
+	width: 110px;
+	display: none;
+}
+
+#continue {
+	display: none;
+}
+
+#stop {
+	display: none;
+}
+
+#page {
+	width: 40px;
+}
+
+#log {
+	border: 1px solid #999;
+	border-radius: 4px;
+	padding: 5px;
+	height: 105px;
+	overflow: auto;
+	margin-top: 5px;
+}
