@@ -1,6 +1,7 @@
 import {
 	JSONFilePreset
 } from 'lowdb/node'
+
 import {
 	dirname
 } from '../utils/index.mjs'
@@ -18,7 +19,7 @@ export let defaultData = {
 	"minPrice":"",
 	"maxPrice":""
 }
+export let db = await JSONFilePreset('db.json', defaultData);
 
-export let db = await JSONFilePreset(path.join(dirname(import.meta.url), 'db.json'), defaultData);
 
 

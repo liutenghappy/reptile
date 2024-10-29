@@ -110,7 +110,6 @@ let Reptile = {
 	//处理数据
 	handleData(products) {
 		let set = new Set();
-		let test = [];
 		let excelData = [];
 		for (let i = 0; i < products.length; i++) {
 			if (!set.has(products[i].isbn)) {
@@ -118,19 +117,15 @@ let Reptile = {
 				temp.push(products[i].name, products[i].market_price, products[i].isbn);
 				excelData.push(temp);
 				set.add(products[i].isbn)
-			} else {
-				test.push(products[i])
-			}
+			} 
 		}
 		set = null;
-
-		console.log(test)
 		return excelData
 	},
 	//导出excel
 	exportExcel(name, products) {
 		const data = this.handleData(products);
-		console.log(products.length)
+		// console.log(products.length)
 		let workbook = XLSX.utils.book_new();
 		let ws_data = [
 			["书名", "价格", "ISBN"], ...data

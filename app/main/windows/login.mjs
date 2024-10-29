@@ -17,5 +17,6 @@ export default function createWindow() {
 	});
 	win.resizable = false;
 	win.loadFile("app/renderer/pages/login/index.html");
+	//win.webContents.openDevTools();
 	return win
 };

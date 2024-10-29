@@ -81,21 +81,6 @@ app.post("/token", (req, res) => {
   })
 });
 
-app.get('/auth/:code',(req,res)=>{
-	let code = req.params.code;
-	request.post(`/auth/oauth/token?grant_type=wechat_mini_program&code=${code}`,{},{
-		headers:{
-			Authorization:'Basic eGlhb2d1eWEtYXBwOmIwNzkyOThk',
-			xweb_xhr:1
-		}
-	}).then(data=>{
-		res.send(data)
-	}).catch((err) => {
-      console.log(err);
-      res.status(500).send(err.message);
-    });
-})
-
 
 app.listen(4444, () => {
   console.log("服务器启动");
